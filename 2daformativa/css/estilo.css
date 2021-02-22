@@ -1,0 +1,157 @@
+/* Títulos, Enlaces y Botones */
+h1, h2, h3, a, button {font-family: 'Montserrat', sans-serif;}
+
+/* Subtítulos, Párrafos, Formularios y otras etiquetas de textos */
+h4, h5, h6, p, form, input, select, textarea, option, table, tr, td, span, div, strong, em {font-family: 'Poppins', sans-serif;}
+
+
+/* Asignar display: block; a todas las cajas de estructura */
+header, main, footer, aside, section, article, figure, nav, figcaption, div {display: block;}
+
+/* Anular margen por defecto de body */
+
+body { margin: 0 !important; }
+
+/* Estilo propio */
+
+/* Componente Menú Móviles */
+
+aside#menu-movil {width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; right: -290px; z-index: 99999; background: rgb(48 54 106 / 97%); }
+aside#menu-movil a#abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: rgb(48 54 106); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in;  }
+aside#menu-movil a#abrir:hover { background: #E94381; transition: all 0.3s ease-in;  }
+
+
+aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: rgb(48 54 106); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in;  }
+aside#menu-movil a#cerrar:hover { background: #E94381; transition: all 0.3s ease-in;  }
+
+
+aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative;  }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #fff; text-decoration: none; transition: all 0.3s ease-in;  }
+aside#menu-movil nav a:hover { color: #999; transition: all 0.3s ease-in;  }
+
+
+
+/* Componente: HEADER */
+header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 99998; margin: 0; float: none; background: #fff; }
+header article { width: 1100px; height: 100px; position: relative; margin: 0 auto; float: none; }
+header article a { width: 189px; height: 80px; display: block; position: relative; margin: 0; float: left; top: 10px; }
+header article a img { width: auto; height: 80px; display: block; position: relative; margin: 0 auto; float: none; }
+
+header article nav { width: 390px; height: 50px; display: block; position: relative; margin: 27px 0 0; float: right; }
+header article nav a { width: auto; height: auto; display: block; position: relative; margin: 0 11px; float: left; color: rgb(48, 54, 106); text-decoration: none; font-weight: 600; font-size: 1em; line-height: 1em; padding: 17px 0 8px; border-bottom: solid 2px white; top: 0; transition: all 0.3s ease-in; }
+header article nav a:hover { color: blue; border-bottom: solid 2px blue; transition: all 0.3s ease-in;}
+
+
+
+/* Componente: Contenedor MAIN */
+main { width: 100%; height: auto; position: relative; margin: 100px auto 0 auto; float: none; }
+
+/* Componente: Seccion "presentación" */
+main section#presentacion  { width: 100%; height: 500px; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#presentacion div#ancla-presentacion { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+main section#presentacion article { width: 1100px; height: 500px; position: relative; margin: 0 auto; float: none; }
+main section#presentacion article figure { width: 510px; height: 500px; position: relative; margin: 0 80px 0 0; float: left;  }
+main section#presentacion article figure img { width: 90%; height: auto; position: relative; float: none; margin: 0 auto; display: block; top: 45px; }
+main section#presentacion article div#textos-presentacion { width: 510px; height: 500px; position: relative; margin: 0; float: left;  }
+main section#presentacion article div#textos-presentacion h2 { font-size: 1.5em; color: rgb(48 54 106); font-weight: 500; line-height: 1em; margin: 0px; padding: 100px 0 15px; letter-spacing: -0.015em;  }
+main section#presentacion article div#textos-presentacion h1 { font-size: 3.3em; color: rgb(48 54 106); font-weight: 800; line-height: 1em; margin: 0px; padding: 0 0 15px; letter-spacing: -0.015em;  }
+main section#presentacion article div#textos-presentacion p { margin: 0; font-size: 1em; color: #555; letter-spacing: -0.02em; font-weight: 400; line-height: 1.5em; padding: 0 140px 15px 0;  }
+main section#presentacion article div#textos-presentacion a { width: auto; height: auto; display: block; position: relative; margin: 0; float: left; color: #fff; background: #E94381; text-decoration: none; font-weight: 600; font-size: 1em; line-height: 1em; padding: 14px 25px; border-radius: 25px; transition: all 0.3s ease-in;  }
+main section#presentacion article div#textos-presentacion a:hover { background: #2372ce; padding: 14px 30px; transition: all 0.3s ease-in;  } /* Para que cuando le undas salga de otro color o cambie el enlace */
+
+/* Componente: Sección "servicios" */
+
+main section#servicios { width: 100%; height: 250px; position: relative; margin: 0 auto; float: none; background: #fff; }
+main section#servicios div#ancla-servicios { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+main section#servicios article { width: 1100px; height: 250px; position: relative; margin: 0 auto; float: none; }
+main section#servicios article figure { width: 235px; height: 200px; position: relative; margin: 50px 20px 0 20px; float: left; display: inline-block; }
+main section#servicios article figure img { width: auto; height: 95px; position: relative; margin: 0 auto 10px; float: none; display: block; }
+main section#servicios article figure h5 { font-size: 1.1em; color: rgb(48 54 106); font-weight: 700; line-height: 1em; margin: 0px; padding: 15px 0 10px; letter-spacing: -0.015em; text-align: center; }
+main section#servicios article figure p { margin: 0; font-size: 0.9em; color: #555; letter-spacing: 0; font-weight: 400; line-height: 1.3em; padding: 0; text-align: center; }
+/* Componente: Footer */
+
+footer { width: 100%; height: auto; position: relative; margin: 0; float: none; background: rgb(48, 54, 106); padding: 70px 0 70px; }
+footer div#ancla-contacto { width: 100%; height: 1px; position: absolute; margin: 0 auto; float: none; top: -100px; left: 0; }
+footer article { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none; }
+footer article div#superior-footer { width: 1100px; height: 200px; position: relative; margin: 0 auto 30px; float: none; }
+
+footer article div#superior-footer div.cajas-footer { width: 230px; height: 200px; position: relative; margin: 0 60px 0 0; float: left; }
+footer article div#superior-footer div.cajas-footer:last-child { margin: 0; }
+/* footer article div#superior-footer div.cajas-footer:nth-child(4) { margin: 0; }*/
+footer article div#superior-footer div.cajas-footer img { width: 70%; height: auto; position: relative; margin: 0 auto 10px; float: none; }
+footer article div#superior-footer div.cajas-footer p { margin: 0; font-size: 0.9em; color: #fff; letter-spacing: 0.04em; font-weight:300; line-height: 1.3em; }
+footer article div#superior-footer div.cajas-footer h6 { margin: 25px 0 10px; font-size: 1.9em; color: #fff;
+font-weight: 700; line-height: 1.3em }
+
+footer article div#superior-footer div.cajas-footer nav#contactos { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+footer article div#superior-footer div.cajas-footer nav#contactos a { width: 100%; height: 25px; margin: 0 auto 10px; float: none; display: block; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#contactos a:nth-child(1) { height: 45px; }
+
+footer article div#superior-footer div.cajas-footer nav#contactos a i { width: 17px; height: 17px; display: block; float: left; margin: 0 7px 0 0; font-size: 0.95em; color: #c0d3e4; padding: 3px; text-align: center; transition: all 0.3s ease-in; }
+footer article div#superior-footer div.cajas-footer nav#contactos a span { width: 155px; height: auto; display: block; float: left; margin: 0; font-size: 0.9em; color: #fff; letter-spacing: 0.04em; font-weight: 300; line-height: 1.3em; transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#contactos a:hover { transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#contactos a:hover i { color: #000; transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#contactos a:hover span { color: #000; transition: all 0.3s ease-in;  }
+
+footer article div#superior-footer div.cajas-footer nav#redes { height: auto; width: 100%; margin: 0 auto; float: none; position: relative;  }
+footer article div#superior-footer div.cajas-footer nav#redes a { width: 40px; height: auto; display: block; margin: 0; float: left; color: #fff; text-align: center; font-size: 1.3em; padding: 7px 0; transition: all 0.3s ease-in;  }
+footer article div#superior-footer div.cajas-footer nav#redes a:hover { color: #000; transition: all 0.3s ease-in;  }
+
+
+footer article div#inferior-footer { width: 1100px; height: auto; position: relative; margin: 0 auto; float: none;  }
+footer article div#inferior-footer p { margin: 70px auto; float: none; display: block; font-size: 0.9em; color: #fff; letter-spacing: 0.04em; font-weight: 300; line-height: 1.5em; text-align: center;  }
+footer article div#inferior-footer p span { font-weight: 700; }
+
+/* Zona de Media Queries para Responsive */
+
+/* Ajustes Tablets */
+
+@media only screen and (max-width: 1199px){
+    header article { width: 90%; }
+    header article a { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+    aside#menu-movil { display: block; }
+
+    main section#presentacion { height: auto; }
+    main section#presentacion article { width: 80%; height: auto; }
+    main section#presentacion article figure { width: 100%; height: auto; margin: 0 auto; float: none; }
+    main section#presentacion article figure img { width: auto; height: 300px; top: 45px; }
+    main section#presentacion article div#textos-presentacion { width: 100%; height: auto; margin: 0 auto; float: none; }
+    main section#presentacion article div#textos-presentacion h2,
+    main section#presentacion article div#textos-presentacion h1,
+    main section#presentacion article div#textos-presentacion p { text-align: center; }
+    main section#presentacion article div#textos-presentacion p { margin: 0 auto; float: none; padding: 0 0 15px; }
+    main section#presentacion article div#textos-presentacion a { margin: 0 auto; float: none; width: 150px; text-align: center; }
+
+
+    main section#servicios { height: auto; }
+    main section#servicios article { width: 80%; height: auto; }
+    main section#servicios article figure { margin: 50px auto 0 auto; float: none; display: block; }
+
+
+    footer article { width: 80%; height: auto; }
+    footer article div#superior-footer { width: 100%; height: auto; }
+    footer article div#superior-footer div.cajas-footer { margin: 0 auto; float: none; }
+    footer article div#superior-footer div.cajas-footer:last-child { margin: 0 auto; height: 100px; }
+
+    footer article div#inferior-footer { width: 100%; }
+}
+
+/* Ajustes para Móviles */
+@media only screen and (max-width: 499px){
+    header article a { margin: 0; float: left; }
+}
+
+@media only screen and (max-width: 399px){
+
+}   
+ 
+            
+
+ 
+
+
+
+
+
